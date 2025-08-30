@@ -1,0 +1,86 @@
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.info-box i.icon {
+  font-size: 30px;
+  color: green;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info-box h3 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-form-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.form-title {
+  font-size: 32px;
+  color: #1c2452;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #f1f1f1;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #26b167;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1f9956;
+}

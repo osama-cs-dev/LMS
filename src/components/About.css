@@ -1,0 +1,455 @@
+.about-header {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(90deg, #e6f7f8 0%, #ffe6eb 100%);
+  border-radius: 0 0 40px 40px;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a2550;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #28a745; /* أخضر */
+  font-weight: 600;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+  color: #1a2550;
+}
+/* كرت المميزات */
+.feature-card {
+  background: #fff;
+  border-radius: 8px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #0d1c46;
+}
+
+.feature-text {
+  color: #7d7d7d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* زر Explore */
+.explore-btn {
+  position: relative;
+  font-weight: bold;
+  color: #0d1c46;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.explore-btn .circle-bg {
+  width: 50px;
+  height: 50px;
+  background-color: #d9f5ec; /* لون الخلفية الدائري */
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  z-index: -1;
+}
+
+.explore-btn .arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+/* ========== Hero Section ========== */
+.hero-section {
+  background: #f9f9ff;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 44px !important;
+  font-weight: bold;
+  color: #1a2d62 !important ;
+}
+
+.hero-title .highlight {
+  color: #00b96b;
+  text-decoration: underline;
+}
+
+.hero-text {
+  color: #666;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.explore-more-btn {
+  background-color: #00b96b;
+  color: #fff;
+  padding: 10px 24px;
+  display: inline-block;
+  border-radius: 50px !important;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.explore-more-btn:hover {
+  background-color: #1a2d62;
+}
+
+/* Shapes */
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.shape-square {
+  position: absolute;
+  top: 10%;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ff725e;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.shape-diamond {
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background-color: #00b96b;
+  transform: rotate(45deg);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+/* ========== Feature Cards ========== */
+.feature-card {
+  background: #fff;
+  border-radius: 8px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #0d1c46;
+}
+
+.feature-text {
+  color: #7d7d7d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.explore-btn {
+  position: relative;
+  font-weight: bold;
+  color: #0d1c46;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.explore-btn .circle-bg {
+  width: 50px;
+  height: 50px;
+  background-color: #d9f5ec;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  z-index: -1;
+}
+
+.explore-btn .arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+/* ✅ Section Title */
+.section-subtitle {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 42px !important;
+  color: #1a2d62 !important;
+}
+
+.highlight-green {
+  color: #22c55e; /* أخضر */
+}
+
+/* ✅ Feature Cards */
+.feature-box {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: all 0.3s ease-in-out;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+  border-color: #22c55e;
+}
+
+/* ✅ Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #e8f9f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto;
+  color: #22c55e;
+}
+/* ===== Why Choose Section ===== */
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2ecc71 !important;
+  text-transform: uppercase;
+}
+
+.subtitle-line {
+  height: 2px;
+  width: 60px;
+  background-color: #00b96b;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d1c46;
+}
+
+.section-title .underlined {
+  position: relative;
+  display: inline-block;
+  color: #2eca7f !important;
+}
+
+.section-title .underlined::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #00b96b;
+  border-radius: 2px;
+}
+
+.achievement-section .text-underline {
+  border-bottom: 4px solid #2eca7f !important; /* green underline */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.small-heading {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+
+.subtitle-line-green {
+  height: 2px;
+  background-color:#2eca7f !important;
+  flex-grow: 1;
+  max-width: 100px;
+}
+
+.highlight-green {
+  color: #2eca7f !important;
+  border-bottom: 4px solid #28a745;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.row{
+    --bs-gutter-y: 0!important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-top: calc(-1 * var(--bs-gutter-y))!important;
+    margin-right: calc(-.5 * var(--bs-gutter-x))!important;
+    margin-left: calc(-.5 * var(--bs-gutter-x))!important;
+} 
+.col-lg-3 {
+        flex: 0 0 auto !important ;
+        width: 25% !important;
+    }
+    .instructor-card {
+  transition: transform 0.3s ease;
+}
+
+.instructor-card:hover {
+  transform: translateY(-5px);
+}
+
+.social-links a {
+  font-size: 14px;
+  color: white;
+  background-color: #28a745;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #218838;
+}
+.instructor-card .social-links a {
+  text-decoration: none !important; 
+}
+.text-decoration-none{
+color: #1a2d62 !important;
+text-decoration: underline !important;
+}
+/* FAQ Section Styling */
+.faq-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.faq-img {
+  height: 637px;
+  width: 560px;
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.faq-bg-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #10c98f 20%, #19c79f 80%);
+  z-index: 1;
+}
+.instructor-img {
+  width: 100%;
+  height: auto;           /* يخليها responsive */
+  object-fit: contain;    /* ما يقص من الصورة */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+/* على الشاشات الكبيرة */
+@media (min-width: 769px) {
+  .instructor-img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+/* الحاوية الرئيسية */
+/* === Section Wrapper === */
+.info-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+/* === Container with 3 Columns === */
+.info-row {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Each Column === */
+.info-column {
+  flex: 1;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.info-column h3 {
+  font-size: 22px;
+  color: #0f1e45;
+  margin-bottom: 12px;
+}
+
+.info-column p {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* === Divider Between Columns === */
+.column-divider {
+  width: 1px;
+  background-color: #ddd;
+}
+
+/* === Explore Button with Green Circle Behind === */
+.explore-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.explore-btn a {
+  font-weight: bold;
+  color: #0f1e45;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  padding: 10px 15px;
+}
+
+/* Green circle appears ALWAYS behind the text */
+.explore-btn::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #d4f6e4; /* Green background always visible */
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Arrow after the link */
+.arrow {
+  font-weight: bold;
+  color: #0f1e45;
+  margin-left: 10px;
+  z-index: 2;
+}

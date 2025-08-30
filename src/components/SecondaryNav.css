@@ -1,0 +1,146 @@
+
+.active-nav > .nav-link,
+.active-nav > .dropdown-toggle {
+  color: #28d17c !important;
+  font-weight: bold;
+}
+
+
+.custom-right-nav .icon-link {
+  font-size: 18px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar-nav {
+  margin-left: 40px;
+}
+
+.cart-badge {
+  font-size: 12px;
+  padding: 3px 6px;
+  position: absolute !important;
+  top: -5px;
+  right: -10px;
+}
+
+.btn-login {
+  background-color: #28d17c !important;
+  border: 1px solid #2eca7f !important;
+  border-radius: 100px !important;
+  padding: 9px 30px !important;
+  font-weight: bold;
+  margin: 0 8px;
+  color: #fff;
+  font-size: 15px !important;
+}
+
+
+
+.btn-login:hover{
+ background: #1a2d62!important;
+
+}
+
+
+.btn-signup {
+  background-color: #fff !important;
+  border: 1px solid #dcdcdc !important;
+  border-radius: 100px !important;
+  padding: 9px 30px !important;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #1a2d62 !important;
+  font-size: 14px !important;
+  display: inline-block !important;
+  width: auto !important;
+}
+
+.btn-signup:hover {
+    color: white !important;
+  background-color: #28d17c !important;
+}
+
+.dropdown-menu {
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #28d17c !important;
+  padding: 8px 0;
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #0d2b55 !important;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #28d17c !important;
+  color: #fff !important;
+}
+
+.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+/* ✅ Responsive Layout for Tablets and Smaller Screens */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 0 !important;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .custom-right-nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn-login,
+  .btn-signup {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .icon-link {
+    margin: 5px 0 !important;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .cart-badge {
+    top: -4px;
+    right: -6px;
+    font-size: 10px;
+  }
+
+  /* ✅ Disable hover dropdown on mobile */
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: none !important;
+  }
+}
+
+/* ✅ Smaller phones */
+@media (max-width: 575px) {
+  .btn-login,
+  .btn-signup {
+    font-size: 14px !important;
+    padding: 8px 20px !important;
+  }
+
+  .dropdown-item {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .icon-link {
+    font-size: 16px;
+  }
+}

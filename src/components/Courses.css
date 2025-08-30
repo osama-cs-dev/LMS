@@ -1,0 +1,127 @@
+.section-top {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  position: relative;
+}
+
+.section-top::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYV2NkYGD4z8DAwMjAyMAAAMgABpX+/8KXAAAAAElFTkSuQmCC') repeat;
+  opacity: 0.1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-top-title h1 {
+  font-size: 3em;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.section-top-title ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-top-title ul li {
+  display: inline;
+  color: #666;
+}
+
+.section-top-title ul li a {
+  color: #2ecc71;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.section-top-title ul li a:hover {
+  text-decoration: underline;
+}
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100% ;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-body {
+  padding: 15px;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-category {
+  background: #e6f8ec;
+  color: #16a34a;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.course-price {
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.course-info {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.course-footer {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
