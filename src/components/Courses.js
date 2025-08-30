@@ -11,7 +11,7 @@ const courses = [
     duration: "7 hours 30 minutes",
     rating: 4.33,
     level: "Beginner",
-    image: "/courses/1.jpg",
+    image: process.env.PUBLIC_URL + "/courses/1.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/2.jpg",
+    image: process.env.PUBLIC_URL + "/courses/2.jpg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/3.jpg",
+    image: process.env.PUBLIC_URL + "/courses/3.jpg",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/4.jpg",
+    image: process.env.PUBLIC_URL + "/courses/4.jpg",
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/5.jpg",
+   image: process.env.PUBLIC_URL + "/courses/5.jpg",
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/6.jpg",
+    image: process.env.PUBLIC_URL + "/courses/6.jpg",
   },
   {
     id: 3,
@@ -77,7 +77,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/7.jpg",
+    image: process.env.PUBLIC_URL + "/courses/7.jpg",
   },
   {
     id: 3,
@@ -88,7 +88,7 @@ const courses = [
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/8.jpg",
+   image: process.env.PUBLIC_URL + "/courses/8.jpg",
   },
   {
     id: 4,
@@ -99,7 +99,7 @@ const courses = [
     duration: "13 hours 20 minutes",
     rating: 3.33,
     level: "All Levels",
-    image: "/courses/9.jpg",
+   image: process.env.PUBLIC_URL + "/courses/9.jpg",
   },
 ];
 

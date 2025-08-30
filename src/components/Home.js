@@ -28,7 +28,7 @@ function Home() {
     duration: "7 hours 30 minutes",
     rating: 4.33,
     level: "Beginner",
-    image: "/courses/1.jpg",
+    image: process.env.PUBLIC_URL + "/courses/1.jpg",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ function Home() {
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/2.jpg",
+    image: process.env.PUBLIC_URL + "/courses/2.jpg",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ function Home() {
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/3.jpg",
+    image: process.env.PUBLIC_URL + "/courses/3.jpg",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ function Home() {
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/4.jpg",
+    image: process.env.PUBLIC_URL + "/courses/4.jpg",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ function Home() {
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/5.jpg",
+   image: process.env.PUBLIC_URL + "/courses/5.jpg",
   },
   {
     id: 3,
@@ -83,7 +83,7 @@ function Home() {
     duration: "18 hours 20 minutes",
     rating: 4.0,
     level: "Intermediate",
-    image: "/courses/6.jpg",
+    image: process.env.PUBLIC_URL + "/courses/6.jpg",
   },
 ]
 const featureIcons = [
@@ -241,8 +241,9 @@ const blogs = [
             <div className="col-md-6 text-center mb-4 mb-md-0">
               <div className="hero-image-wrapper">
                 <img
-                  src="women.png"
-                  alt="Hero"
+                  src={process.env.PUBLIC_URL + "/women.png"} alt="women"
+
+                  
                   className="img-fluid hero-image"
                 />
                 <div className="shape-square"></div>
@@ -320,10 +321,10 @@ const blogs = [
    
     <div className="row g-4">
       {[
-        { icon: "😊", count: 145, label: "Enrolled Students", color: "text-primary" },
-        { icon: "📄", count: 89, label: "Academic Programs", color: "text-warning" },
-        { icon: "🎧", count: 28, label: "Winning Award", color: "text-success" },
-        { icon: "👤", count: 16, label: "Certified Students", color: "text-danger" },
+        {  count: 145, label: "Enrolled Students", color: "text-primary" },
+        {  count: 89, label: "Academic Programs", color: "text-warning" },
+        {  count: 28, label: "Winning Award", color: "text-success" },
+        {  count: 16, label: "Certified Students", color: "text-danger" },
       ].map((item, idx) => (
         <div className="col-md-3 col-sm-6" key={idx}>
           <div className="p-4 bg-white rounded shadow-sm h-100 text-center">
@@ -342,8 +343,7 @@ const blogs = [
           {!playVideo && (
             <div className="video-poster" onClick={() => setPlayVideo(true)}>
               <img
-                src="video.jpg"
-                alt="Hero"
+                ssrc={process.env.PUBLIC_URL + "/video.jpg"} alt="video"
                 className="video-image"
               />
               <div className="play-button">&#9658;</div> 
