@@ -23,7 +23,7 @@ A responsive and modern web application built using **React**, **HTML**, **CSS**
 ## 🖼️ Screenshots
 
 ### Home Page
-![Home Page](https://osama-cs-dev.github.io/LMS/assets/banner.png)
+![Home Page](https://osama-cs-dev.github.io/LMS/assets/home.png)
 
 ### Courses Section
 ![Courses Section](https://osama-cs-dev.github.io/LMS/assets/courses.png)
