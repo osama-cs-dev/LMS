@@ -117,6 +117,43 @@
   justify-content: space-between;
 }
 
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.filter-bar select {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  min-width: 250px;
+}
+
+.filter-bar select:focus {
+  border-color: #666;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filter-bar option {
+  padding: 10px;
+}
+.filter-bar {
+  position: relative;
+  z-index: 1000;
+}
+
+.filter-bar select {
+  position: relative;
+  z-index: 1001;
+}
 
 
 
