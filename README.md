@@ -31,7 +31,7 @@ A responsive and modern web application built using **React**, **HTML**, **CSS**
 ### About Page
 ![About Page](public/assets/about.png)
 
-> Replace the URLs above with your actual screenshot paths from your project.
+
 
 ---
 
