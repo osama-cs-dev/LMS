@@ -149,13 +149,6 @@ const blogs = [
 
   const [playVideo, setPlayVideo] = useState(false);
 
-  // const [email, setEmail] = useState("");
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   alert(`Subscribed with email: ${email}`);
-  //   setEmail("");
-  // };
 
   return (
     

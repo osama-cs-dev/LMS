@@ -9,7 +9,7 @@ const SecondaryNav = () => {
   const [showDropdown, setShowDropdown] = useState(null);
   const location = useLocation();
 
-  // تحديد active link حسب المسار الحالي
+  
   useEffect(() => {
     const path = location.pathname;
     if (path.includes("/about") || path.includes("/instructors") || path.includes("/events")) setActiveLink("About");
@@ -61,7 +61,7 @@ const SecondaryNav = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* Pages / About Dropdown */}
+            
             <NavDropdown
               id="pages-dropdown"
               className={isActive("About")}
@@ -75,7 +75,7 @@ const SecondaryNav = () => {
               <NavDropdown.Item as={Link} to="/about" onClick={() => handleSetActive("About")}>Events</NavDropdown.Item>
             </NavDropdown>
 
-            {/* Courses Dropdown */}
+            
             <NavDropdown
               id="courses-dropdown"
               className={isActive("Courses")}
@@ -88,7 +88,7 @@ const SecondaryNav = () => {
               <NavDropdown.Item as={Link} to="/courses" onClick={() => handleSetActive("Courses")}>Course Style 3</NavDropdown.Item>
             </NavDropdown>
 
-            {/* Blog Dropdown */}
+           
             <NavDropdown
               id="blog-dropdown"
               className={isActive("Blog")}

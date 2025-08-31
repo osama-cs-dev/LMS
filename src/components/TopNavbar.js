@@ -17,7 +17,7 @@ const TopNavbar = () => {
 
         
         <Nav>
-          <Nav.Link href="#account" className="header-buy-now e-btn--3d -color-primary">
+          <Nav.Link href="Home" className="header-buy-now e-btn--3d -color-primary">
             Buy now
           </Nav.Link>
         </Nav>
