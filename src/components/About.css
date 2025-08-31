@@ -24,7 +24,7 @@
 
 .breadcrumb a {
   text-decoration: none;
-  color: #28a745; /* أخضر */
+  color: #28a745; 
   font-weight: 600;
 }
 
@@ -32,7 +32,7 @@
   margin: 0 8px;
   color: #1a2550;
 }
-/* كرت المميزات */
+
 .feature-card {
   background: #fff;
   border-radius: 8px;
@@ -51,7 +51,7 @@
   line-height: 1.7;
 }
 
-/* زر Explore */
+
 .explore-btn {
   position: relative;
   font-weight: bold;
@@ -65,7 +65,7 @@
 .explore-btn .circle-bg {
   width: 50px;
   height: 50px;
-  background-color: #d9f5ec; /* لون الخلفية الدائري */
+  background-color: #d9f5ec; 
   border-radius: 50%;
   position: absolute;
   left: -15px;
@@ -76,7 +76,7 @@
   margin-left: 8px;
   font-size: 18px;
 }
-/* ========== Hero Section ========== */
+
 .hero-section {
   background: #f9f9ff;
   position: relative;
@@ -116,7 +116,7 @@
   background-color: #1a2d62;
 }
 
-/* Shapes */
+
 .hero-image-wrapper {
   position: relative;
   display: inline-block;
@@ -152,7 +152,7 @@
   z-index: 0;
 }
 
-/* ========== Feature Cards ========== */
+
 .feature-card {
   background: #fff;
   border-radius: 8px;
@@ -195,7 +195,7 @@
   margin-left: 8px;
   font-size: 18px;
 }
-/* ✅ Section Title */
+
 .section-subtitle {
   letter-spacing: 1px;
   font-size: 14px;
@@ -208,10 +208,10 @@
 }
 
 .highlight-green {
-  color: #22c55e; /* أخضر */
+  color: #22c55e; 
 }
 
-/* ✅ Feature Cards */
+
 .feature-box {
   background: #fff;
   border: 1px solid #eee;
@@ -222,7 +222,7 @@
   border-color: #22c55e;
 }
 
-/* ✅ Icon Circle */
+
 .icon-circle {
   width: 60px;
   height: 60px;
@@ -235,7 +235,6 @@
   margin: 0 auto;
   color: #22c55e;
 }
-/* ===== Why Choose Section ===== */
 .section-subtitle {
   font-size: 14px;
   font-weight: 600;
@@ -335,7 +334,6 @@
 color: #1a2d62 !important;
 text-decoration: underline !important;
 }
-/* FAQ Section Styling */
 .faq-image-wrapper {
   position: relative;
   display: inline-block;
@@ -362,34 +360,29 @@ text-decoration: underline !important;
 }
 .instructor-img {
   width: 100%;
-  height: auto;           /* يخليها responsive */
-  object-fit: contain;    /* ما يقص من الصورة */
+  height: auto;           
+  object-fit: contain;    
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 }
 
-/* على الشاشات الكبيرة */
 @media (min-width: 769px) {
   .instructor-img {
     height: 300px;
     object-fit: cover;
   }
 }
-/* الحاوية الرئيسية */
-/* === Section Wrapper === */
 .info-section {
   background-color: #fff;
   padding: 60px 0;
 }
 
-/* === Container with 3 Columns === */
 .info-row {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* === Each Column === */
 .info-column {
   flex: 1;
   padding: 0 30px;
@@ -409,13 +402,11 @@ text-decoration: underline !important;
   line-height: 1.6;
 }
 
-/* === Divider Between Columns === */
 .column-divider {
   width: 1px;
   background-color: #ddd;
 }
 
-/* === Explore Button with Green Circle Behind === */
 .explore-btn {
   display: flex;
   align-items: center;
@@ -432,12 +423,11 @@ text-decoration: underline !important;
   padding: 10px 15px;
 }
 
-/* Green circle appears ALWAYS behind the text */
 .explore-btn::before {
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #d4f6e4; /* Green background always visible */
+  background-color: #d4f6e4; 
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -446,7 +436,7 @@ text-decoration: underline !important;
   z-index: 1;
 }
 
-/* Arrow after the link */
+
 .arrow {
   font-weight: bold;
   color: #0f1e45;

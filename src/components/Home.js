@@ -6,6 +6,7 @@ import { useState } from "react";
 import LogoScroller from "./LogoScroller";
 import { FaPaperPlane } from 'react-icons/fa';
 import { FaRegCalendarAlt, FaRegFileAlt, FaMapMarkerAlt, FaStar, FaImage } from "react-icons/fa";
+import { FaUserGraduate, FaBook, FaAward, FaCertificate } from "react-icons/fa";
 
 
 function Home() {
@@ -86,6 +87,12 @@ function Home() {
     image: process.env.PUBLIC_URL + "/courses/6.jpg",
   },
 ]
+const achievements = [
+    { count: 145, label: "Enrolled Students", color: "text-primary", icon: <FaUserGraduate /> },
+    { count: 89, label: "Academic Programs", color: "text-warning", icon: <FaBook /> },
+    { count: 28, label: "Winning Award", color: "text-success", icon: <FaAward /> },
+    { count: 16, label: "Certified Students", color: "text-danger", icon: <FaCertificate /> },
+  ];
 const featureIcons = [
   { text: "Learn at your own pace", icon: <FaRegCalendarAlt color='#34A853'  /> },
   { text: "Learn at your own pace", icon: <FaRegFileAlt color='#34A853'  /> },
@@ -121,19 +128,19 @@ const plans = [
 ]
 const blogs = [
   {
-    image: "/blogs/blog1.jpg",
+    image: process.env.PUBLIC_URL + "/blogs/blog1.jpg",
     date: "Jun 01, 2024",
     category: "Technology",
     title: "Professional Mobile Painting and Sculpting",
   },
   {
-    image:"/blogs/blog2.jpg",
+    image: process.env.PUBLIC_URL + "/blogs/blog2.jpg",
     date: "May 29, 2024",
     category: "Programming",
     title: "Professional Ceramic Moulding for Beginner",
   },
   {
-    image: "/blogs/blog1.jpg",
+    image: process.env.PUBLIC_URL + "/blogs/blog1.jpg",
     date: "May 29, 2024",
     category: "Programming",
     title: "Professional Ceramic Moulding for Beginner",
@@ -142,25 +149,33 @@ const blogs = [
 
   const [playVideo, setPlayVideo] = useState(false);
 
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Subscribed with email: ${email}`);
-    setEmail("");
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert(`Subscribed with email: ${email}`);
+  //   setEmail("");
+  // };
 
   return (
     
     <>
-    
-    <section className="home-section">
+     <section
+      className="home-section"
+style={{ backgroundImage: "url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png')" }}
+    >
       <div className="content-wrapper">
         <h1 className="main-heading">
-          Get smart <span className="highlighted">opportunity for</span><br></br>
-          your best future
-        </h1>
-        <p>It is a long established fact that reader will be distracted readable content of a page when.</p>
+  Get smart <span className="highlighted">opportunity for</span>
+  <br />
+  your best future
+</h1>
+
+
+        <p>
+          It is a long established fact that reader will be distracted readable
+          content of a page when.
+        </p>
 
         <div className="search-bar">
           <input type="text" placeholder="Search Your Course Here" />
@@ -170,11 +185,9 @@ const blogs = [
         </div>
 
         <p className="popular-topics">
-          Popular Topic: 
-          <span> Business</span>, 
-          <span> Data Science</span>, 
-          <span> Digital Program</span>, 
-          <span> Finance</span>
+          Popular Topic:
+          <span> Business</span>, <span> Data Science</span>,
+          <span> Digital Program</span>, <span> Finance</span>
         </p>
       </div>
     </section>
@@ -241,7 +254,7 @@ const blogs = [
             <div className="col-md-6 text-center mb-4 mb-md-0">
               <div className="hero-image-wrapper">
                 <img
-                  src={process.env.PUBLIC_URL + "/women.png"} alt="women"
+                  src={process.env.PUBLIC_URL + "/images/women.png"} alt="women"
 
                   
                   className="img-fluid hero-image"
@@ -306,44 +319,36 @@ const blogs = [
       </section>
 </section>
 <section className="achievement-section py-5 bg-light">
-  <div className="container">
-  
-    <div className="d-flex align-items-center mb-2">
-      <h6 className="section-subtitle me-3">SOME FUN FACT</h6>
-      <div className="subtitle-line-green"></div>
-    </div>
-
-    
-    <h2 className="section-title mb-5">
-      Our Great <span>Achievement</span>
-    </h2>
-
-   
-    <div className="row g-4">
-      {[
-        {  count: 145, label: "Enrolled Students", color: "text-primary" },
-        {  count: 89, label: "Academic Programs", color: "text-warning" },
-        {  count: 28, label: "Winning Award", color: "text-success" },
-        {  count: 16, label: "Certified Students", color: "text-danger" },
-      ].map((item, idx) => (
-        <div className="col-md-3 col-sm-6" key={idx}>
-          <div className="p-4 bg-white rounded shadow-sm h-100 text-center">
-            <div className={`fs-1 mb-2 ${item.color}`}>{item.icon}</div>
-            <h3 className="fw-bold">{item.count}</h3>
-            <p className="text-muted">{item.label}</p>
-          </div>
+      <div className="container">
+        <div className="d-flex align-items-center mb-2">
+          <h6 className="section-subtitle me-3">SOME FUN FACT</h6>
+          <div className="subtitle-line-green"></div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+
+        <h2 className="section-title mb-5">
+          Our Great <span>Achievement</span>
+        </h2>
+
+        <div className="row g-4">
+          {achievements.map((item, idx) => (
+            <div className="col-md-3 col-sm-6" key={idx}>
+              <div className="p-4 bg-white rounded shadow-sm h-100 text-center">
+                <div className={`fs-1 mb-2 ${item.color}`}>{item.icon}</div>
+                <h3 className="fw-bold">{item.count}</h3>
+                <p className="text-muted">{item.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
    <section className="video-section py-5">
       <div className="container">
         <div className="video-wrapper">
           {!playVideo && (
             <div className="video-poster" onClick={() => setPlayVideo(true)}>
               <img
-                ssrc={process.env.PUBLIC_URL + "/video.jpg"} alt="video"
+                src={process.env.PUBLIC_URL + "/images/video.jpg"} alt="video"
                 className="video-image"
               />
               <div className="play-button">&#9658;</div> 
@@ -384,7 +389,11 @@ const blogs = [
         </div>
 
         <div className="image-area">
-          <img src="sqaure.png" alt="Online Course" className="main-img" />
+<img 
+  src={process.env.PUBLIC_URL + "/images/sqaure.png"} 
+  alt="Online Course" 
+  className="main-img" 
+/>
         </div>
       </div>
     </section>

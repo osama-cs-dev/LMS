@@ -1,87 +1,107 @@
 .home-section {
-  padding: 60px 20px;
-  background: #f9f9f9;
+  position: relative;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #1a2d62;
+  overflow: hidden;
 }
 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); 
+  z-index: 1;
+}
+
+
 .content-wrapper {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .main-heading {
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: 60px;
   font-weight: bold;
-  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .highlighted {
-  color: #2eca7f;
+  color: #28d17c;
 }
 
+
 .search-bar {
+  margin: 20px 0;
   display: flex;
   justify-content: center;
-  margin: 30px 0;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .search-bar input {
-  padding: 12px 16px;
-  font-size: 1rem;
-  width: 300px;
-  max-width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
-  outline: none;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .search-bar button {
-  padding: 12px 20px;
-  font-size: 1rem;
-  background-color: #2eca7f;
+  background: #28d17c;
   color: white;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 30px;
+  padding: 12px 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 .popular-topics {
   margin-top: 15px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .popular-topics span {
-  margin: 0 6px;
-  color: #2eca7f;
-  font-weight: 500;
+  color: #28d17c;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-/* ✅ Responsive Design */
+
 @media (max-width: 768px) {
   .main-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .search-bar {
     flex-direction: column;
-    align-items: stretch;
   }
 
-  .search-bar input,
+  .search-bar input {
+    width: 100%;
+  }
+
   .search-bar button {
     width: 100%;
-    border-radius: 4px;
-  }
-
-  .search-bar button {
-    margin-top: 10px;
   }
 }
+
+
+
 
 @media (max-width: 480px) {
   .main-heading {

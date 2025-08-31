@@ -1,146 +1,152 @@
-
-.active-nav > .nav-link,
-.active-nav > .dropdown-toggle {
-  color: #28d17c !important;
+.custom-navbar .active-nav > .nav-link,
+.custom-navbar .active-nav > .dropdown-toggle {
+  color: #28d17c;
   font-weight: bold;
 }
 
-
-.custom-right-nav .icon-link {
+.custom-navbar .custom-right-nav .icon-link {
   font-size: 18px;
   margin: 0 10px;
   position: relative;
+  color: #0d2b55;
+  transition: color 0.3s ease;
 }
 
-.navbar-nav {
+.custom-navbar .custom-right-nav .icon-link:hover,
+.custom-navbar .custom-right-nav .icon-link:focus {
+  color: #28d17c;
+}
+
+.custom-navbar .navbar-nav {
   margin-left: 40px;
 }
 
-.cart-badge {
+.custom-navbar .cart-badge {
   font-size: 12px;
   padding: 3px 6px;
-  position: absolute !important;
+  position: absolute;
   top: -5px;
   right: -10px;
 }
 
-.btn-login {
-  background-color: #28d17c !important;
-  border: 1px solid #2eca7f !important;
-  border-radius: 100px !important;
-  padding: 9px 30px !important;
+.custom-navbar .btn-login {
+  background-color: #28d17c;
+  border: 1px solid #2eca7f;
+  border-radius: 100px;
+  padding: 9px 30px;
   font-weight: bold;
   margin: 0 8px;
   color: #fff;
-  font-size: 15px !important;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-
-
-.btn-login:hover{
- background: #1a2d62!important;
-
+.custom-navbar .btn-login:hover,
+.custom-navbar .btn-login:focus {
+  background-color: #1a2d62;
+  transform: translateY(-2px);
 }
 
-
-.btn-signup {
-  background-color: #fff !important;
-  border: 1px solid #dcdcdc !important;
-  border-radius: 100px !important;
-  padding: 9px 30px !important;
+.custom-navbar .btn-signup {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 100px;
+  padding: 9px 30px;
   font-weight: bold;
   margin-left: 5px;
-  color: #1a2d62 !important;
-  font-size: 14px !important;
-  display: inline-block !important;
-  width: auto !important;
+  color: #1a2d62;
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-signup:hover {
-    color: white !important;
-  background-color: #28d17c !important;
+.custom-navbar .btn-signup:hover,
+.custom-navbar .btn-signup:focus {
+  color: #fff;
+  background-color: #28d17c;
+  transform: translateY(-2px);
 }
 
-.dropdown-menu {
-  border: none !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-top: 4px solid #28d17c !important;
+.custom-navbar .dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #28d17c;
   padding: 8px 0;
   border-radius: 0 0 6px 6px;
+  z-index: 1050;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.dropdown-item {
+.custom-navbar .dropdown-item {
   padding: 10px 20px;
   font-weight: 500;
-  color: #0d2b55 !important;
+  color: #0d2b55;
   transition: all 0.3s ease;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background-color: #28d17c !important;
-  color: #fff !important;
+.custom-navbar .dropdown-item:hover,
+.custom-navbar .dropdown-item:focus {
+  background-color: #28d17c;
+  color: #fff;
 }
 
-.navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-/* ✅ Responsive Layout for Tablets and Smaller Screens */
+/* Responsive */
 @media (max-width: 991px) {
-  .navbar-nav {
-    margin-left: 0 !important;
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
     flex-direction: column;
     gap: 15px;
     padding: 10px 0;
   }
 
-  .custom-right-nav {
-    flex-direction: column !important;
-    align-items: stretch !important;
+  .custom-navbar .custom-right-nav {
+    flex-direction: column;
+    align-items: stretch;
     gap: 10px;
     margin-top: 20px;
   }
 
-  .btn-login,
-  .btn-signup {
-    width: 100% !important;
-    margin: 0 !important;
+  .custom-navbar .btn-login,
+  .custom-navbar .btn-signup {
+    width: 100%;
+    margin: 0;
   }
 
-  .icon-link {
-    margin: 5px 0 !important;
+  .custom-navbar .icon-link {
+    margin: 5px 0;
     font-size: 18px;
     display: inline-flex;
     align-items: center;
   }
 
-  .cart-badge {
+  .custom-navbar .cart-badge {
     top: -4px;
     right: -6px;
     font-size: 10px;
   }
 
-  /* ✅ Disable hover dropdown on mobile */
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: none !important;
+  .custom-navbar .dropdown-menu {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    transform: none;
   }
 }
 
-/* ✅ Smaller phones */
 @media (max-width: 575px) {
-  .btn-login,
-  .btn-signup {
-    font-size: 14px !important;
-    padding: 8px 20px !important;
+  .custom-navbar .btn-login,
+  .custom-navbar .btn-signup {
+    font-size: 14px;
+    padding: 8px 20px;
   }
 
-  .dropdown-item {
+  .custom-navbar .dropdown-item {
     font-size: 14px;
     padding: 8px 16px;
   }
 
-  .icon-link {
+  .custom-navbar .icon-link {
     font-size: 16px;
   }
 }

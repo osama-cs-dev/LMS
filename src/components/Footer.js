@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="footer-col">
   <h2 className="footer-logo">
     <img
-      src="footer-logo.png"
-      alt="Edusion Logo"
+     src={process.env.PUBLIC_URL + "/images/footer-logo.png"} alt="Footer Logo" 
+
       style={{ height: "50px", objectFit: "contain" }}
     />
   </h2>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import TopNavbar from "./components/TopNavbar";
 import SecondaryNav from "./components/SecondaryNav";
 import ScrollNavs from "./components/ScrollNavs";
@@ -20,11 +20,13 @@ function App() {
         <ScrollNavs />
 
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+  <Route path="/" element={<Navigate to="/home" />} />
+  <Route path="/home" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/courses" element={<Courses />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
+
 
         <Footer />
       </div>
