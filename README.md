@@ -23,13 +23,13 @@ A responsive and modern web application built using **React**, **HTML**, **CSS**
 ## 🖼️ Screenshots
 
 ### Home Page
-![Home Page](https://osama-cs-dev.github.io/LMS/assets/home.png)
+![Home Page](public/assets/home.png)
 
 ### Courses Section
-![Courses Section](https://osama-cs-dev.github.io/LMS/assets/courses.png)
+![Courses Section](public/assets/courses.png)
 
 ### About Page
-![About Page](https://osama-cs-dev.github.io/LMS/assets/about.png)
+![About Page](public/assets/about.png)
 
 > Replace the URLs above with your actual screenshot paths from your project.
 
